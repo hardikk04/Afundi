@@ -2,10 +2,203 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: gilroy;
 }
 
 body,
 html {
   width: 100%;
   height: 100%;
+  background-color: #191919;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.page1 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 5vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 6vw;
+}
+
+nav > h1 {
+  font-size: 2.5vw;
+  font-weight: 200;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.nav-right button {
+  padding: 0.8vw 1.5vw;
+  border: 1px solid #ffffff97;
+  color: #fff;
+  border-radius: 2vw;
+  background-color: #191919;
+}
+
+.nav-right > i {
+  font-size: 1.2vw;
+}
+
+.page1-heading {
+  position: relative;
+  padding: 10vw 4vw;
+  display: flex;
+  justify-content: center;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page1-heading-top > h1 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 5.5vw;
+  cursor: pointer;
+}
+.page1-heading-center > h1 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 6vw;
+  cursor: pointer;
+}
+
+.page1-heading-bottom > h1 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-size: 5.5vw;
+  cursor: pointer;
+}
+
+.page1-heading span {
+  color: #fff;
+  position: relative;
+}
+
+.page1-heading span::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+
+.page1-heading-box img {
+  scale: 0;
+  transition: all ease 0.5s;
+}
+
+.page1-heading-top {
+  position: relative;
+  z-index: 1;
+}
+
+.brand1 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -60%;
+  left: 5%;
+  z-index: 9;
+}
+
+.website1 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -60%;
+  left: 5%;
+  z-index: 9;
+}
+
+.plateform1 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -60%;
+  left: 5%;
+  z-index: 9;
+}
+
+.page1-heading-center {
+  position: relative;
+}
+
+.brand2 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.website2 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.plateform2 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.page1-heading-bottom {
+  position: relative;
+}
+
+.brand3 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -40%;
+  left: 80%;
+  z-index: 9;
+}
+
+.website3 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -40%;
+  left: 80%;
+  z-index: 9;
+}
+
+.plateform3 {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  top: -40%;
+  left: 80%;
+  z-index: 9;
 }
