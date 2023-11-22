@@ -2,7 +2,6 @@ const brandImg1 = document.querySelector(".brand1");
 const brandImg2 = document.querySelector(".brand2");
 const brandImg3 = document.querySelector(".brand3");
 const brandTag = document.querySelector(".page1-heading-top > h1>span");
-console.log(brandTag);
 
 brandTag.addEventListener("mouseenter", () => {
   brandImg1.style.scale = 1;
@@ -107,5 +106,57 @@ t1.to(".scroller > h1", {
     trigger: ".scroller",
     scrub: 0.5,
     start: "top 90%",
+  },
+});
+
+t1.to(".page3-elem1-img > img", {
+  height: "100%",
+  width: "100%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-elem1-img",
+    scrub: 0.5,
+    start: "top 90%",
+    end: "top 10%",
+    // markers: true,
+  },
+});
+
+t1.to(".page3-elem2-img > img", {
+  height: "100%",
+  width: "100%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-elem2-img",
+    scrub: 0.5,
+    start: "top 100%",
+    end: "top 10%",
+    // markers: true,
+  },
+});
+
+t1.to(".page3-elem3-img > img", {
+  height: "100%",
+  width: "100%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-elem3-img",
+    scrub: 0.5,
+    start: "top 100%",
+    end: "top 10%",
+    // markers: true,
+  },
+});
+
+t1.to(".page3-elem4-img > img", {
+  height: "100%",
+  width: "100%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page3-elem4-img",
+    scrub: 0.5,
+    start: "top 100%",
+    end: "top 10%",
+    // markers: true,
   },
 });
