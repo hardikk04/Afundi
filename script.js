@@ -178,3 +178,16 @@ t1.to(
     },
   }
 );
+
+t1.from(".page6-text", {
+  y: 100,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page6-text",
+    scrub: 0.5,
+    start: "top 70%",
+    end: "top 50%",
+    // markers: true,
+  },
+});
