@@ -49,3 +49,40 @@ plateformTag.addEventListener("mouseleave", () => {
   plateformImg2.style.scale = 0;
   plateformImg3.style.scale = 0;
 });
+
+const t1 = gsap.timeline();
+t1.from(
+  ".page1-heading h1",
+  0.5,
+  {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    stagger: 0.3,
+  },
+  0.5
+);
+
+t1.from(
+  ".page1-video video",
+  0.5,
+  {
+    opacity: 0,
+    y: 100,
+    duration: 0.3,
+  },
+  0.5
+);
+
+t1.to(".page1-video video", {
+  height: "100%",
+  width: "100%",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page1-video",
+    pin: true,
+    scrub: 1,
+    start: "top top",
+    // markers: true,
+  },
+});

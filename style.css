@@ -58,7 +58,7 @@ nav > h1 {
 
 .page1-heading {
   position: relative;
-  padding: 10vw 4vw;
+  padding: 6vw 4vw;
   display: flex;
   justify-content: center;
   line-height: 1.2;
@@ -201,4 +201,20 @@ nav > h1 {
   top: -40%;
   left: 80%;
   z-index: 9;
+}
+
+.page1-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page1-video > video {
+  height: 85%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 0.5vw;
 }
