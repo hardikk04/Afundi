@@ -191,3 +191,14 @@ t1.from(".page6-text", {
     // markers: true,
   },
 });
+
+Shery.mouseFollower();
+
+Shery.makeMagnet(
+  "nav>h1,.nav-right>button,.nav-right>i,.page3 h1,.page3 button,.page5 button,.page7-right-elem>h1,.icons i",
+  {
+    //Parameters are optional.
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  }
+);
