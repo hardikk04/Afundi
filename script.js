@@ -160,3 +160,21 @@ t1.to(".page3-elem4-img > img", {
     // markers: true,
   },
 });
+
+t1.to(
+  ".page4-right > .page4-right-elem:nth-child(2),.page4-right > .page4-right-elem:nth-child(3)",
+  {
+    top: "0%",
+    stagger: 0.1,
+    scrollTrigger: {
+      scroller: "body",
+      trigger: ".page4",
+      scrub: 0.5,
+      start: "top 30%",
+      end: "top 0%",
+      // markers: true,
+      pin: true,
+      pinSpacing: false,
+    },
+  }
+);
