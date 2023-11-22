@@ -86,3 +86,26 @@ t1.to(".page1-video video", {
     // markers: true,
   },
 });
+
+t1.from(".page2-text", {
+  y: 100,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".page2-text",
+    scrub: 0.5,
+    start: "top 70%",
+    end: "top 40%",
+    // markers: true,
+  },
+});
+
+t1.to(".scroller > h1", {
+  transform: "translateX(-15%)",
+  scrollTrigger: {
+    scroller: "body",
+    trigger: ".scroller",
+    scrub: 0.5,
+    start: "top 90%",
+  },
+});

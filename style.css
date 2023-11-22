@@ -218,3 +218,67 @@ nav > h1 {
   object-fit: cover;
   border-radius: 0.5vw;
 }
+
+.page2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+
+.page2-text {
+  position: relative;
+  padding: 6vw 6vw;
+  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page2-text > h1 {
+  font-size: 2.4vw;
+  font-weight: 500;
+  width: 60%;
+  line-height: 1.2;
+}
+
+.page2-text-right {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  padding-left: 5vw;
+}
+
+.page2-text-right > p {
+  font-size: 1.2vw;
+  width: 75%;
+}
+
+.scroller {
+  width: 100%;
+  height: 45vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroller > h1 {
+  font-size: 12vw;
+  flex-shrink: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: -12px;
+}
+
+.scroller > h1 > span {
+  color: #fff;
+}
+
+.page3 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
